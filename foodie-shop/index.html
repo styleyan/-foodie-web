@@ -10,28 +10,20 @@
 
 	<link rel="shortcut icon" href="img/foodie.ico"/>
 
-	<link href="AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdn.bootcdn.net/ajax/libs/amazeui/2.4.2/css/amazeui.min.css" rel="stylesheet">
 	<link href="AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css" />
 	<link href="basic/css/demo.css" rel="stylesheet" type="text/css" />
 	<link href="css/hmstyle.css" rel="stylesheet" type="text/css" />
 	<link href="css/skin.css" rel="stylesheet" type="text/css" />
 	<link href="css/lee.css" rel="stylesheet" type="text/css" />
-	<!-- <link href="components/mloading/jquery.mloading.css" rel="stylesheet" type="text/css" /> -->
-
-	<script src="AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
-	<!-- <script src="AmazeUI-2.4.2/assets/js/amazeui.js"></script> -->
-	<script src="AmazeUI-2.4.2/assets/js/amazeui.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.9/dist/vue.js"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/amazeui/2.4.2/js/amazeui.min.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
 </head>
 
 <body>
-
-<div class="attention">本电商购物平台为慕课网演示网站，仅供学习和交流。所有交易金额均为0.01元，并且不会真实发货！</div>
-
-<!-- <div id="index" @scroll="handleScroll"> -->
 <div id="index">
-
 	<div class="hmtop">
 		<!--顶部导航条 -->
 		<div class="am-container header">
@@ -154,17 +146,6 @@
 						</a>
 					</div>
 				</div>
-				<!-- <div class="am-u-sm-4 am-u-lg-3 ">
-							<div class="info ">
-								<h3>支付宝小程序</h3>
-								<h4>移动端电商实战</h4>
-							</div>
-							<div class="recommendationMain four">
-								<a href="https://coding.imooc.com/class/293.html" target="_blank">
-									<img src="course/alipay.jpg"></img>
-								</a>
-							</div>
-						</div> -->
 			</div>
 			<div class="clear "></div>
 			<!--热门活动 -->
@@ -252,7 +233,7 @@
 				</div>
 				<div class="footer-bd ">
 					<p>
-						<em>© 2019 imooc.com 京ICP备12003892号-11 北京奥鹏文化传媒有限公司 版权所有</em>
+						<em>© 2020 -  Y. Jer 的虚拟笔记 - 浙ICP备 19042205号 版权所有</em>
 					</p>
 				</div>
 			</div>
@@ -324,18 +305,10 @@
 		</div>
 	</div>
 </div>
-	<!-- <script>
-		window.jQuery || document.write('<script src="basic/js/jquery.min.js "><\/script>');
-	</script> -->
 	<script type="text/javascript " src="basic/js/quick_links.js"></script>
-	<!-- <script type="text/javascript " src="js/jquery.blockUI.js"></script> -->
-	<!-- <script type="text/javascript " src="components/mloading/jquery.mloading.js"></script> -->
 	<script type="text/javascript " src="js/app.js"></script>
 	<script type="text/javascript">
 		function showPage(type, catOrItemId) {
-			// console.log("type:" + type);
-			// console.log("catOrItemId:" + catOrItemId);
-
 			if(type == 1) {
 				window.open("item.html?itemId=" + catOrItemId);
 			} else if (type == 2) {
@@ -585,45 +558,10 @@
 													}
 												});
 										}
-										// var renderHtml = '' 
-										// 	+ '<dl class="dl-sort">'
-										// 		+ '<dt><span title="大包装">大包装</span></dt>'
-										// 		+ '<dd><a title="蒸蛋糕" href="#"><span>蒸蛋糕</span></a></dd>'
-										// 		+ '<dd><a title="脱水蛋糕" href="#"><span>脱水蛋糕</span></a></dd>'
-										// 		+ '<dd><a title="瑞士卷" href="#"><span>瑞士卷</span></a></dd>'
-										// 		+ '<dd><a title="软面包" href="#"><span>软面包</span></a></dd>'
-										// 		+ '<dd><a title="马卡龙" href="#"><span>马卡龙</span></a></dd>'
-										// 		+ '<dd><a title="千层饼" href="#"><span>千层饼</span></a></dd>'
-										// 		+ '<dd><a title="甜甜圈" href="#"><span>甜甜圈</span></a></dd>'
-										// 		+ '<dd><a title="蒸三明治" href="#"><span>蒸三明治</span></a></dd>'
-										// 		+ '<dd><a title="铜锣烧" href="#"><span>铜锣烧</span></a></dd>'
-										// 	+ '</dl>'
-										// 	+ '<dl class="dl-sort">'
-										// 		+ '<dt><span title="两件套">两件套</span></dt>'
-										// 		+ '<dd><a title="蒸蛋糕" href="#"><span>蒸蛋糕</span></a></dd>'
-										// 		+ '<dd><a title="脱水蛋糕" href="#"><span>脱水蛋糕</span></a></dd>'
-										// 		+ '<dd><a title="瑞士卷" href="#"><span>瑞士卷</span></a></dd>'
-										// 		+ '<dd><a title="软面包" href="#"><span>软面包</span></a></dd>'
-										// 		+ '<dd><a title="马卡龙" href="#"><span>马卡龙</span></a></dd>'
-										// 		+ '<dd><a title="千层饼" href="#"><span>千层饼</span></a></dd>'
-										// 		+ '<dd><a title="甜甜圈" href="#"><span>甜甜圈</span></a></dd>'
-										// 		+ '<dd><a title="蒸三明治" href="#"><span>蒸三明治</span></a></dd>'
-										// 		+ '<dd><a title="铜锣烧" href="#"><span>铜锣烧</span></a></dd>'
-										// 	+ '</dl>';
-										// 	$(this)
-										// 		.children("div.menu-in")
-										// 		.children("div.area-in")
-										// 		.children("div.area-bg")
-										// 		.children("div.menu-srot")
-										// 		.children("div.sort-side")
-										// 		.html(renderHtml);
 									} else {
 										$(this).addClass("hover");
 										$(this).children("div.menu-in").css("display", "block");
 									}
-
-									// $(this).addClass("hover");
-									// $(this).children("div.menu-in").css("display", "block")
 								}, function () {
 									$(this).removeClass("hover")
 									$(this).children("div.menu-in").css("display", "none")
